@@ -1,0 +1,63 @@
+ <!DOCTYPE	html>
+
+<html>
+<head>
+<title>Registration</title>
+</head>
+
+
+<body>
+<table border = "1" width="100%">
+         <thead>
+            <tr> 
+               <th><a href="home.htm"> Home</a></th>
+               <th><a href="localdishes.htm"> Local Dishes</a></th>
+			   <th><a href="historicalplaces.htm"> Historical Places</a></th>
+			   <th><a href="usefullinks.htm">Useful Links</a></th>
+			   <th><a href="aboutme.htm">About me</a></th>
+			   <th><a href="contactme.htm">Contact me</a></th>
+			   <th><a href="registration.htm"><font size="5">Registration</font></a></th>
+            </tr>
+         </thead>
+
+</table>
+
+<hr> </hr>
+
+<center>
+<form method="POST" action="confirmed.htm">
+		<label for='name'>Name:</label>
+        <input type='text' id='name' name='name' required><br>
+		
+		<label for='surname'>Surname:</label>
+        <input type='text' id='surname' name='surname' required><br>
+
+		<label for="birthday">Date of Birth:</label>
+        <input type="date" id="birthday" name="birthday"><br>
+		
+        <label>Email:<input type='email' name='email' required></label><br>
+		
+		<label for="password">Password : </label>
+		<input type="password" id="password" name="password" required</label><br>
+		
+		<label for="gender">Gender : </label>
+		<input list="gender">
+		  	<datalist id="gender">
+		    	<option value="Male">
+		    	<option value="Female">
+		    </datalist><br>
+		
+		
+		Interests <br>
+		<input type="checkbox" name="coding" value="coding">Coding <br> <!-- or items[0] or items[]-->
+		<input type="checkbox" name="music" value="music">Music <br> 
+		<input type="checkbox" name="sports" value="sports">Sports <br> 
+		<input type="checkbox" name="travel" value="travel">Travelling <br><br>
+	
+		<input type="reset" value="Reset">
+		<input type="submit" value="Submit">
+</form>
+</center>
+
+</body>
+</html>
