@@ -2,62 +2,114 @@
 
 <html>
 <head>
-<title>Registration</title>
+	<title>Registration</title>
+	<link href="css/bootstrap_slate.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
 </head>
 
 
 <body>
-<table border = "1" width="100%">
-         <thead>
-            <tr> 
-               <th><a href="home.htm"> Home</a></th>
-               <th><a href="localdishes.htm"> Local Dishes</a></th>
-			   <th><a href="historicalplaces.htm"> Historical Places</a></th>
-			   <th><a href="usefullinks.htm">Useful Links</a></th>
-			   <th><a href="aboutme.htm">About me</a></th>
-			   <th><a href="contactme.htm">Contact me</a></th>
-			   <th><a href="registration.htm"><font size="5">Registration</font></a></th>
-            </tr>
-         </thead>
+	<nav class="navbar navbar-inverse">
+    	<div class="container">
 
-</table>
+			<!-- start collapsed navbar -->
+    		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false">Menu</button>
+    		</div> <!-- /collapsed navbar -->
 
-<hr> </hr>
+			<!-- start un-collapsed navbar -->
+    		<div class="collapse navbar-collapse" id="main_navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="home.htm">Home</a></li> 
+					<li><a href="localdishes.htm"> Local Dishes</a></li>
+					<li><a href="historicalplaces.htm"> Historical Places</a></li>
+					<li><a href="usefullinks.htm">Useful Links</a></li>
+					<li><a href="aboutme.htm">About me</a></li>
+					<li><a href="contactme.htm">Contact me</a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li  class="active"><a href="registration.htm"><font size="5">Registration</font></a></li>
+				</ul>
+        	</div> <!-- /un-collapsed navbar -->
 
-<center>
-<form action="confirmed.htm">
-		<label for='name'>Name:</label>
-        <input type='text' id='name' name='name' required><br>
-		
-		<label for='surname'>Surname:</label>
-        <input type='text' id='surname' name='surname' required><br>
+      	</div> <!-- /container -->
+    </nav>
 
-		<label for="birthday">Date of Birth:</label>
-        <input type="date" id="birthday" name="birthday"><br>
-		
-        <label>Email:<input type='email' name='email' required></label><br>
-		
-		<label for="password">Password : </label>
-		<input type="password" id="password" name="password" required</label><br>
-		
-		<label for="gender">Gender : </label>
-		<input list="gender">
-		  	<datalist id="gender">
-		    	<option value="Male">
-		    	<option value="Female">
-		    </datalist><br>
-		
-		
-		Interests <br>
-		<input type="checkbox" name="coding" value="coding">Coding <br> <!-- or items[0] or items[]-->
-		<input type="checkbox" name="music" value="music">Music <br> 
-		<input type="checkbox" name="sports" value="sports">Sports <br> 
-		<input type="checkbox" name="travel" value="travel">Travelling <br><br>
-	
-		<input type="reset" value="Reset">
-		<input type="submit" value="Submit">
-</form>
-</center>
 
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6">
+			<div id="registration">
+				
+					<form action="confirmed.htm">
+						<div class="form-group">
+							<label for='name'>Name:</label>
+						<input type='text' class="form-control" id='name' name='name' required><br>
+						
+					
+						<div class="form-group">
+							<label for='surname'>Surname:</label>
+							<input type='text' class="form-control" id='surname' name='surname' required><br>
+						</div>
+						
+						<div class="form-group">
+							<label for="birthday">Date of Birth:</label>
+							<input type="date" class="form-control" id="birthday" name="birthday"><br>
+						</div>
+						
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type='email' class="form-control" id="email" name='email' required>
+						</div>
+						
+						<div class="form-group">
+							<label for="password">Password : </label>
+							<input type="password" class="form-control" id="password" name="password" required</label><br>
+						</div>
+						
+						<div class="form-group">
+							<label for="gender">Gender : </label>
+							<select class="form-control" id="gender">
+								<option>Male</option>
+								<option>Female</option>
+							<select>
+						</div>
+						
+						<label class="form-group">Interests:</label>
+						
+						<div class="form-check">
+							<label class="form-check-label">
+								<input type="checkbox" name="coding" value="coding">Coding
+							</label>
+							
+							<label class="form-check-label">
+								<input type="checkbox" name="music" value="music">Music 
+							</label>
+						
+							<label class="form-check-label">
+								<input type="checkbox" name="sports" value="sports">Sports 
+							</label>
+							
+							<label class="form-check-label">
+								<input type="checkbox" name="travel" value="travel">Travelling
+							</label>
+						</div>
+						
+						
+						<button type="reset" class="btn btn-primary btn-lg" value="Reset">Reset</button>
+						<button type="submit" class="btn btn-primary btn-lg" value="Submit">Submit</button>
+						
+					</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<!-- jquery libraries -->
+    <script src="js/jquery.min.js"></script> 
+    <!-- bootsrap libraries -->
+    <script src="js/bootstrap.min.js"></script> 
 </body>
 </html>

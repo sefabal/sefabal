@@ -2,32 +2,61 @@
 
 <html>
 <head>
-<title>About Me</title>
+	<title>About Me</title>
+	<link href="css/bootstrap_slate.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
 
 </head>
 
 
 <body>
-<table border = "1" width="100%">
-         <thead>
-            <tr> 
-               <th><a href="home.htm"> Home</a></th>
-               <th><a href="localdishes.htm"> Local Dishes</a></th>
-			   <th><a href="historicalplaces.htm"> Historical Places</a></th>
-			   <th><a href="usefullinks.htm">Useful Links</a></th>
-			   <th><a href="aboutme.htm"><font size="5">About me</font></a></th>
-			   <th><a href="contactme.htm">Contact me</a></th>
-			   <th><a href="registration.htm">Registration</a></th>
-            </tr>
-         </thead>
+	<nav class="navbar navbar-inverse">
+    	<div class="container">
 
-</table>
+			<!-- start collapsed navbar -->
+    		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false">Menu</button>
+    		</div> <!-- /collapsed navbar -->
 
-<hr> </hr>
+			<!-- start un-collapsed navbar -->
+    		<div class="collapse navbar-collapse" id="main_navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="home.htm">Home</a></li> 
+					<li><a href="localdishes.htm"> Local Dishes</a></li>
+					<li><a href="historicalplaces.htm"> Historical Places</a></li>
+					<li><a href="usefullinks.htm">Useful Links</a></li>
+					<li class="active"><a href="aboutme.htm"><font size="5"> About me</font></a></li>
+					<li><a href="contactme.htm">Contact me</a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="registration.htm">Registration</a></li>
+				</ul>
+        	</div> <!-- /un-collapsed navbar -->
 
-<img src="source/me.JPG" alt="Me" style="width:1072px;height:712px;">
+      	</div> <!-- /container -->
+    </nav>
 
-<p>Hi! I am Sefa. I was born in Tire,Izmir but my family live in Ankara. I am second year in my bachelor. I really like playing basketball and listening classic music.
-</p>
+	<div class="jumbotron">
+		<center>
+			<img src="source/me.JPG" alt="Me" style="width:1072px;height:712px;">
+		</center>
+	</div>
+	
+	<div class="container">
+		<font size="5">
+			<p>
+			Hi! I am Sefa. I was born in Tire,Izmir but my family live in Ankara. 
+			I am second year in my bachelor. I really like playing basketball and listening classic 
+			music.
+			</p>
+		</font>
+	</div>
+	
+	<!-- jquery libraries -->
+    <script src="js/jquery.min.js"></script> 
+    <!-- bootsrap libraries -->
+    <script src="js/bootstrap.min.js"></script> 
 </body>
 </html>

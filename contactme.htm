@@ -2,37 +2,72 @@
 
 <html>
 <head>
-<title>Contact Me</title>
+	<title>Contact Me</title>
+	<link href="css/bootstrap_slate.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
 </head>
 
 
 <body>
-<table border = "1" width="100%">
-         <thead>
-            <tr> 
-               <th><a href="home.htm">Home</a></th>
-               <th><a href="localdishes.htm"> Local Dishes</a></th>
-			   <th><a href="historicalplaces.htm"> Historical Places</a></th>
-			   <th><a href="usefullinks.htm">Useful Links</a></th>
-			   <th><a href="aboutme.htm">About me</a></th>
-			   <th><a href="contactme.htm"><font size="5">Contact me </font></a></th>
-			   <th><a href="registration.htm">Registration</a></th>
-            </tr>
-         </thead>
+	<nav class="navbar navbar-inverse">
+    	<div class="container">
 
-</table>
+			<!-- start collapsed navbar -->
+    		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false">Menu</button>
+    		</div> <!-- /collapsed navbar -->
 
-<hr> </hr>
+			<!-- start un-collapsed navbar -->
+    		<div class="collapse navbar-collapse" id="main_navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="home.htm">Home</a></li> 
+					<li><a href="localdishes.htm"> Local Dishes</a></li>
+					<li><a href="historicalplaces.htm">Historical Places</a></li>
+					<li><a href="usefullinks.htm">Useful Links</a></li>
+					<li><a href="aboutme.htm">About me</a></li>
+					<li class="active"><a href="contactme.htm"><font size="5">Contact me</font></a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="registration.htm">Registration</a></li>
+				</ul>
+        	</div> <!-- /un-collapsed navbar -->
 
-<center>
-If you want to contact me, please write to the address below: <br><br>
+      	</div> <!-- /container -->
+    </nav>
 
-<a href="mailto:sefabal@outlook.com"> Sefa Bal </a> <br>
+	
+	<div class="jumbotron">
+			<center>
+			
+			<h1 class="display-1">If you want to contact me, 
+			please write to the address below:</h1>
+			
+			<br>
 
+			<a href="mailto:sefabal@outlook.com"><button type="button" class="btn btn-primary btn-lg">
+			<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>sefabal@outlook.com
+			</button></a> <br>
+			
+			
+		<div id="homepage-icon">
+				<a href="home.htm">
+					<font size="8"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Homepage</font>
+				</a>
+				
+		</div>
+		
+		
+			</center>
+	
+	</div>
 
+	
 
-<a href="home.htm"><img src="source/home_icon.jpg" alt="Home" style="width:250px;height:250px;"></a>
-
-</center>
+	<!-- jquery libraries -->
+    <script src="js/jquery.min.js"></script> 
+    <!-- bootsrap libraries -->
+    <script src="js/bootstrap.min.js"></script> 
 </body>
 </html>

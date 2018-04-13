@@ -2,36 +2,58 @@
 
 <html>
 <head>
-<title>Useful Links</title>
+	<title>Useful Links</title>
+	<link href="css/bootstrap_slate.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
 </head>
 
 
 <body>
-<table border = "1" width="100%">
-         <thead>
-            <tr> 
-               <th><a href="home.htm"> Home</a></th>
-               <th><a href="localdishes.htm"> Local Dishes</a></th>
-			   <th><a href="historicalplaces.htm"> Historical Places</a></th>
-			   <th><a href="usefullinks.htm"><font size="5">Useful Links</font></a></th>
-			   <th><a href="aboutme.htm">About me</a></th>
-			   <th><a href="contactme.htm">Contact me</a></th>
-			   <th><a href="registration.htm">Registration</a></th>
-            </tr>
-         </thead>
+	<nav class="navbar navbar-inverse">
+    	<div class="container">
 
-</table>
+			<!-- start collapsed navbar -->
+    		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false">Menu</button>
+    		</div> <!-- /collapsed navbar -->
 
-<hr> </hr>
+			<!-- start un-collapsed navbar -->
+    		<div class="collapse navbar-collapse" id="main_navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="home.htm">Home</a></li> 
+					<li><a href="localdishes.htm"> Local Dishes</a></li>
+					<li><a href="historicalplaces.htm"> Historical Places</a></li>
+					<li class="active"><a href="usefullinks.htm"><font size="5">Useful Links</font></a></li>
+					<li><a href="aboutme.htm">About me</a></li>
+					<li><a href="contactme.htm">Contact me</a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="registration.htm">Registration</a></li>
+				</ul>
+        	</div> <!-- /un-collapsed navbar -->
 
-<center><a href="https://www.koblenz.de/startseite/index.html" target="_blank">><img src="source/logo_koblenz.png" alt="Koblenz"></a>
-<p> Click photo to go to Koblenz's website </p>
+      	</div> <!-- /container -->
+    </nav>
 
-<iframe width="420" height="315"
-src="https://www.youtube.com/embed/kLf4Gia2WwQ">
-</iframe>
+	<div class="jumbotron">
+		<center>
+			<a href="https://www.koblenz.de/startseite/index.html" target="_blank"><img src="source/logo_koblenz.png" alt="Koblenz"></a>
+			<p> Click photo to go to Koblenz's website </p>
 
-<p> Travel guide video </p>
-</center>
+
+			<iframe width="840" height="630"
+			src="https://www.youtube.com/embed/kLf4Gia2WwQ">
+			</iframe>
+
+			<p> Travel guide video </p>
+		</center>
+	</div>
+
+	<!-- jquery libraries -->
+    <script src="js/jquery.min.js"></script> 
+    <!-- bootsrap libraries -->
+    <script src="js/bootstrap.min.js"></script> 
 </body>
 </html>

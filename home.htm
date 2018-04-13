@@ -2,39 +2,62 @@
 
 <html>
 <head>
-<title>Homepage</title>
+	<title>Homepage</title>
+	<link href="css/bootstrap_slate.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
-<table border = "1" width="100%">
-         <thead>
-            <tr>
-               <th><a href="home.htm"><font size="5"> Home</font></a></th> 
-               <th><a href="localdishes.htm"> Local Dishes</a></th>
-			   <th><a href="historicalplaces.htm"> Historical Places</a></th>
-			   <th><a href="usefullinks.htm">Useful Links</a></th>
-			   <th><a href="aboutme.htm">About me</a></th>
-			   <th><a href="contactme.htm">Contact me</a></th>
-			   <th><a href="registration.htm">Registration</a></th>
-            </tr>
-         </thead>
+	<nav class="navbar navbar-inverse">
+    	<div class="container">
 
-</table>
+			<!-- start collapsed navbar -->
+    		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false">Menu</button>
+    		</div> <!-- /collapsed navbar -->
 
-<hr> </hr>
+			<!-- start un-collapsed navbar -->
+    		<div class="collapse navbar-collapse" id="main_navbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="home.htm"><font size="5"> Home</font></a></li> 
+					<li><a href="localdishes.htm"> Local Dishes</a></li>
+					<li><a href="historicalplaces.htm"> Historical Places</a></li>
+					<li><a href="usefullinks.htm">Useful Links</a></li>
+					<li><a href="aboutme.htm">About me</a></li>
+					<li><a href="contactme.htm">Contact me</a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="registration.htm">Registration</a></li>
+				</ul>
+        	</div> <!-- /un-collapsed navbar -->
+
+      	</div> <!-- /container -->
+    </nav>
+
+
+	<hr> </hr>
 
 
 
+	<div class="container">
+		<div class="thumbnail">
+			<img src="source/koblenz.jpg" alt="Koblenz" width="100%" height="151">
+		</div>
 
-<img src="source/koblenz.jpg" alt="Koblenz" width="100%" height="151">
+		<h1><center>Welcome to Koblenz!</center></h1>
+
+		<p>Koblenz,before 1926, is a German city situated on both banks of the Rhine where it is joined by the Moselle.
+		Koblenz was established as a Roman military post by Drusus around 8 BC. Its name originates in the Latin meaning "The actual confluence is today known as the "German Corner", a symbol of German reunification that features an equestrian statue of Emperor William I. 
+		The city celebrated its 2000th anniversary in 1992.After Mainz and Ludwigshafen am Rhein, it is the third largest city in Rhineland-Palatinate, with a population of c. 106,000 (2006). Koblenz lies in the Rhineland.</p>
+	</div>
 
 
-<h1><center>Welcome to Koblenz!</center></h1>
-
-<p>Koblenz,before 1926, is a German city situated on both banks of the Rhine where it is joined by the Moselle.
-Koblenz was established as a Roman military post by Drusus around 8 BC. Its name originates in the Latin meaning "The actual confluence is today known as the "German Corner", a symbol of German reunification that features an equestrian statue of Emperor William I. 
-The city celebrated its 2000th anniversary in 1992.After Mainz and Ludwigshafen am Rhein, it is the third largest city in Rhineland-Palatinate, with a population of c. 106,000 (2006). Koblenz lies in the Rhineland.</p>
-
+    <!-- jquery libraries -->
+    <script src="js/jquery.min.js"></script> 
+    <!-- bootsrap libraries -->
+    <script src="js/bootstrap.min.js"></script> 
 
 
 </body>

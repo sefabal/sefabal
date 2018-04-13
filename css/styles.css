@@ -1,0 +1,38 @@
+.navbar-inverse {
+	background: #2c3e50;
+}
+
+#localdishes {
+	padding-top: 10%;
+}
+
+#content {
+	text-align: center;
+	padding-top: 35%;
+}
+
+#registration {
+	padding: 15%;
+	
+}
+
+#welcome {
+		color: white;
+		font-size: 25px;
+		text-align: center;
+		padding-top: 35%;
+}
+
+#homepage-icon {
+	padding: 25%;
+	size: 30px;
+}
+
+html {
+	height: 100%;
+}
+
+hr {
+	width: 400px;
+
+}

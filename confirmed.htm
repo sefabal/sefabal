@@ -2,30 +2,52 @@
 
 <html>
 <head>
-<title>Registration Succesfull</title>
+	<title>Registration Succesfull</title>
+	<link href="css/bootstrap_slate.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
 </head>
 
 
 <body>
-<table border = "1" width="100%">
-         <thead>
-            <tr> 
-               <th><a href="home.htm"> Home</a></th>
-               <th><a href="localdishes.htm"> Local Dishes</a></th>
-			   <th><a href="historicalplaces.htm"> Historical Places</a></th>
-			   <th><a href="usefullinks.htm">Useful Links</font></a></th>
-			   <th><a href="aboutme.htm">About me</a></th>
-			   <th><a href="contactme.htm">Contact me</a></th>
-			   <th><a href="registration.htm"><font size="5">Registration</font></a></th>
-            </tr>
-         </thead>
+	<nav class="navbar navbar-inverse">
+    	<div class="container">
 
-</table>
+			<!-- start collapsed navbar -->
+    		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false">Menu</button>
+    		</div> <!-- /collapsed navbar -->
 
-<hr> </hr>
-<center>
-<img src="source/Approved.png" alt="confirmed">
-<p><font size="15"> Registration succesfull.</font> </p>
-</center>
+			<!-- start un-collapsed navbar -->
+    		<div class="collapse navbar-collapse" id="main_navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="home.htm">Home</a></li> 
+					<li><a href="localdishes.htm">Local Dishes</a></li>
+					<li><a href="historicalplaces.htm"> Historical Places</a></li>
+					<li><a href="usefullinks.htm">Useful Links</a></li>
+					<li><a href="aboutme.htm">About me</a></li>
+					<li><a href="contactme.htm">Contact me</a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="registration.htm"><font size="5">Registration</font></a></li>
+				</ul>
+        	</div> <!-- /un-collapsed navbar -->
+
+      	</div> <!-- /container -->
+    </nav>
+
+	
+	<hr> </hr>
+	
+	<center>
+		<img src="source/Approved.png" alt="confirmed">
+		<p><font size="15"> Registration succesfull.</font> </p>
+	</center>
+
+	<!-- jquery libraries -->
+    <script src="js/jquery.min.js"></script> 
+    <!-- bootsrap libraries -->
+    <script src="js/bootstrap.min.js"></script> 
 </body>
 </html>

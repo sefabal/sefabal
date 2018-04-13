@@ -2,52 +2,70 @@
 
 <html>
 <head>
-<title>Local Dishes</title>
-
+	<title>Local Dishes</title>
+	<link href="css/bootstrap_slate.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
 </head>
 
 
 <body>
-<table border = "1" width="100%">
-         <thead>
-            <tr> 
-               <th><a href="home.htm"> Home</a></th>
-               <th><a href="localdishes.htm"><font size="5"> Local Dishes</font></a></th>
-			   <th><a href="historicalplaces.htm"> Historical Places</a></th>
-			   <th><a href="usefullinks.htm">Useful Links</a></th>
-			   <th><a href="aboutme.htm">About me</a></th>
-			   <th><a href="contactme.htm">Contact me</a></th>
-			   <th><a href="registration.htm">Registration</a></th>
-            </tr>
-         </thead>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+    	<div class="container">
 
-</table>
+			<!-- start collapsed navbar -->
+    		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false">Menu</button>
+    		</div> <!-- /collapsed navbar -->
 
-<hr> </hr>
+			<!-- start un-collapsed navbar -->
+    		<div class="collapse navbar-collapse" id="main_navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="home.htm">Home</a></li> 
+					<li class="active"><a href="localdishes.htm"><font size="5">Local Dishes</font></a></li>
+					<li><a href="historicalplaces.htm"> Historical Places</a></li>
+					<li><a href="usefullinks.htm">Useful Links</a></li>
+					<li><a href="aboutme.htm">About me</a></li>
+					<li><a href="contactme.htm">Contact me</a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="registration.htm">Registration</a></li>
+				</ul>
+        	</div> <!-- /un-collapsed navbar -->
 
-<table>
-	<thead>
-		<tr>
-			<th> <img src="source/koblenzer-wines.jpg" alt="wine" style="width:365px;height:240px;"> </th>
-		</tr>
-		<tr>
-			<th>The Romans brought the first vines to the region. This ancient tradition has been maintained and has resulted in around half a million 
-			vines in the wine city of Koblenz. Both on the Rhine and the Moselle, the winegrowers prove their outstanding skills and present the best 
-			from both these famous wine growing regions. At wine and winegrower festivals, at the winegrower’s vineyard itself, in one of the traditional 
-			restaurants or in one of the many wine bars,restaurants or pubs on the banks of the river, you can enjoy a couple of bottles and immerse yourself in the world of Bacchus.</th>
-		</tr>
-		<tr>
-			<th> <img src="source/food.jpg" alt="food" style="width:365px;height:240px;"> </th>
-		</tr>
-		<tr>
-			<th>Schwarzwalder Kirschtorte
-			You’ll find lots of cakes and tarts to tempt you in Germany, commonly made with fresh fruits. Few can resist a huge slice of the most famous of German cakes: 
-			the delicious Schwarzwalder Kirschtorte, or Black Forest cherry cake. The cake is named after Schwarzwalder Kirschwasser, which is a liqueur distilled from tart cherries. 
-			Alternating layers of rich chocolate cake, cherries and whipped cream are topped off with more cream, maraschino cherries and chocolate shavings.</th>
-		
-		</tr>
-	</thead>	
-</table>
+      	</div> <!-- /container -->
+    </nav>
+
+<div id="localdishes">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="thumbnail">
+					<img src="source/koblenzer-wines.jpg" alt="wine" style="width:365px;height:240px;">
+				</div>	
+					<p>The Romans brought the first vines to the region. This ancient tradition has been maintained and has resulted in around half a million 
+					vines in the wine city of Koblenz. Both on the Rhine and the Moselle, the winegrowers prove their outstanding skills and present the best 
+					from both these famous wine growing regions. At wine and winegrower festivals, at the winegrower’s vineyard itself, in one of the traditional 
+					restaurants or in one of the many wine bars,restaurants or pubs on the banks of the river, you can enjoy a couple of bottles and immerse yourself in the world of Bacchus.</p>
+			</div>
+			<div class="col-lg-6">
+				<div class="thumbnail">	
+					<img src="source/food.jpg" alt="food" style="width:365px;height:240px;">
+				</div>
+				<p>Schwarzwalder Kirschtorte
+				You’ll find lots of cakes and tarts to tempt you in Germany, commonly made with fresh fruits. Few can resist a huge slice of the most famous of German cakes: 
+				the delicious Schwarzwalder Kirschtorte, or Black Forest cherry cake. The cake is named after Schwarzwalder Kirschwasser, which is a liqueur distilled from tart cherries. 
+				Alternating layers of rich chocolate cake, cherries and whipped cream are topped off with more cream, maraschino cherries and chocolate shavings.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+	<!-- jquery libraries -->
+    <script src="js/jquery.min.js"></script> 
+    <!-- bootsrap libraries -->
+    <script src="js/bootstrap.min.js"></script> 
 
 </body>
 </html>
