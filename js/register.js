@@ -39,6 +39,16 @@ function checkForm() {
 		return false;
 	}
 
+	if(nameVal.match(special) != null || nameVal.match(numeric) != null ) {
+		alert("Name must be a character.")
+		return false;
+	}
+
+	if(surNameVal.match(special) != null || surNameVal.match(numeric) != null ) {
+		alert("Surname must be a character.")
+		return false;
+	}
+
 	
 	if(nameVal.match(patt1) != null || surNameVal.match(patt1) != null) {
 		console.log("Check the inputs");

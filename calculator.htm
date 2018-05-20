@@ -1,0 +1,100 @@
+ <!DOCTYPE	html>
+
+<html>
+<head>
+	<title>Registration Succesfull</title>
+	<link href="css/bootstrap_slate.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<script src="js/math.min.js"></script>
+	
+
+
+</head>
+
+
+<body>
+	<nav class="navbar navbar-inverse">
+    	<div class="container">
+
+			<!-- start collapsed navbar -->
+    		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false">Menu</button>
+    		</div> <!-- /collapsed navbar -->
+
+			<!-- start un-collapsed navbar -->
+    		<div class="collapse navbar-collapse" id="main_navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="home.htm">Home</a></li> 
+					<li><a href="localdishes.htm">Local Dishes</a></li>
+					<li><a href="historicalplaces.htm"> Historical Places</a></li>
+					<li><a href="usefullinks.htm">Useful Links</a></li>
+					<li><a href="aboutme.htm">About me</a></li>
+					<li><a href="contactme.htm">Contact me</a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="registration.htm"><font size="5">Registration</font></a></li>
+				</ul>
+        	</div> <!-- /un-collapsed navbar -->
+
+      	</div> <!-- /container -->
+    </nav>
+
+	
+	<hr> </hr>
+	
+	<center>
+		<div class="container">
+				<table class="table">
+						<tr>
+							<th colspan="10"><input id="equation"></th>
+						</tr>
+						<tr>
+							<td><button class="btn btn-primary" onclick="func('ln')">ln</button></td>
+							<td><button class="btn btn-primary" onclick="paranthesis(false)">(</button></td>
+							<td><button class="btn btn-primary" onclick="paranthesis(true)">)</button></td>
+							<td><button class="btn btn-primary" onclick="insert('%')">%</button></td>
+							<td><button class="btn btn-primary" onclick="insert('+')">+</button></td>
+						</tr>                    
+						<tr>
+							<td><button class="btn btn-primary" onclick="insert('!')">x!</button></td>
+							<td><button class="btn btn-primary" onclick="insert(7)">7</button></td>
+							<td><button class="btn btn-primary" onclick="insert(8)">8</button></td>
+							<td><button class="btn btn-primary" onclick="insert(9)">9</button></td>
+							<td><button class="btn btn-primary" onclick="insert('/')">/</button></td>
+						</tr>                    
+						<tr>
+							<td><button class="btn btn-primary" onclick="func('sqrt')">√</button></td>
+							<td><button class="btn btn-primary" onclick="insert(4)">4</button></td>
+							<td><button class="btn btn-primary" onclick="insert(5)">5</button></td>
+							<td><button class="btn btn-primary" onclick="insert(6)">6</button></td>
+							<td><button class="btn btn-primary" onclick="insert('*')">*</button></td>
+						</tr>                    
+						<tr>
+							<td><button class="btn btn-primary" onclick="insert('^-1')">1/x</button></td>
+							<td><button class="btn btn-primary" onclick="insert(1)">1</button></td>
+							<td><button class="btn btn-primary" onclick="insert(2)">2</button></td>
+							<td><button class="btn btn-primary" onclick="insert(3)">3</button></td>
+							<td><button class="btn btn-primary" onclick="insert('-')">-</button></td>
+						</tr>  
+						<tr>
+							<td><button class="btn btn-primary" onclick="insert('^')"> x<sup>y</sup> </button></button></td>
+							<td><button class="btn btn-primary" onclick="insert(0)">0</button></td>
+							<td><button class="btn btn-primary" onclick="insert('.')">.</button></td>
+							<td><button class="btn btn-primary" onclick="equal()">=</button></td>
+							<td><button class="btn btn-primary" onclick="clean()">AC</button></td>
+						</tr>
+						</table>
+
+		</div>
+		
+	</center>
+
+	<script src="js/calculator.js"></script>
+	<!-- jquery libraries -->
+    <script src="js/jquery.min.js"></script> 
+    <!-- bootsrap libraries -->
+    <script src="js/bootstrap.min.js"></script> 
+</body>
+</html>
