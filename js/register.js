@@ -22,11 +22,7 @@ function checkForm() {
 		return false;
 	}
 
-	if(passwordValue.length < 6 || passwordValue.length > 14) {
-		alert("Your password should be longer 6 and lower than 14");
-		return false;
-	}
-
+	
 	if(checkPassword(passwordValue,uppercase) == false) {
 		return false;
 	}
@@ -42,6 +38,12 @@ function checkForm() {
 	if(checkPassword(passwordValue,numeric) == false) {
 		return false;
 	}
+	
+	if(passwordValue.length < 6 || passwordValue.length > 14) {
+		alert("Your password should be longer 6 and lower than 14");
+		return false;
+	}
+
 
 }
 
