@@ -14,9 +14,16 @@ function checkForm() {
 	
 	var patt1 = /[w_]/g;
 
+	
+
 	if(nameVal.match(patt1) != null || surNameVal.match(patt1) != null) {
 		console.log("Check the inputs");
 		alert("Name and Surname must be a character.")
+		return false;
+	}
+
+	if(passwordValue.length < 6 || passwordValue.length > 14) {
+		alert("Your password should be longer 6 and lower than 14");
 		return false;
 	}
 
